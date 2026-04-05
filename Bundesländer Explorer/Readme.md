@@ -51,7 +51,7 @@ German-States-Info/
 
 ### Favoriten
 
-![Favoriten](./screenshots/FavoritenUndSortierungNachRegion.png)
+![Favoriten mit Sortierung nach Region](./screenshots/FavoritenUndSortierungNachRegion.png)
 
 ---
 
