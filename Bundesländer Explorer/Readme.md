@@ -49,7 +49,7 @@ German-States-Info/
 
 ![Suche](./screenshots/Suche.png)
 
-### Favoriten
+### Favoriten mit Sortierung nach Region
 
 ![Favoriten mit Sortierung nach Region](./screenshots/FavoritenUndSortierungNachRegion.png)
 
