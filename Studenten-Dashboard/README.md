@@ -28,19 +28,19 @@ Die Anwendung hilft dabei, Aufgaben zu verwalten, Fortschritte zu verfolgen und 
 ## Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](Screenshots/dashboard.png)
 
 ### Aufgaben
-![Aufgaben mit Aufgabenfortschritt](screenshots/tasks.png)
+![Aufgaben mit Aufgabenfortschritt](Screenshots/tasks.png)
 
 ### Kursfortschritt
-![Fortschritt](screenshots/progress.png)
+![Fortschritt](Screenshots/progress.png)
 
 ### Wochenübersicht
-![Diagramm](screenshots/chart.png)
+![Diagramm](Screenshots/chart.png)
 
 ### Dunkelmodus
-![Helltmodus](screenshots/light-mode.png)
+![Hellmodus](Screenshots/light-mode.png)
 
 ---
 
