@@ -94,21 +94,11 @@ project-folder/
 
 ---
 
-## Installation und Nutzung
-
-1. Repository klonen:
+## Repository klonen
 
 ```bash
 git clone https://github.com/SajadFaiz/web-entwicklung.git
 ```
-
-2. Projekt öffnen:
-
-```bash
-cd programming-bookstore
-```
-
-3. Öffne die Datei `index.html` im Browser.
 
 ---
 
