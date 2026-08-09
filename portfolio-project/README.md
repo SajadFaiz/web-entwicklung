@@ -20,7 +20,7 @@ Die Website präsentiert persönliche Informationen, technische Fähigkeiten, Be
 - Validierung im Backend
 - Persistenz mit PostgreSQL
 - Datenbankmigrationen mit Flyway
-- Docker-Konfiguration
+- Docker- und Docker-Compose-Konfiguration
 
 ## Technologien
 
@@ -61,11 +61,12 @@ Die Website präsentiert persönliche Informationen, technische Fähigkeiten, Be
 ### Projektstruktur
 
 ```text
-developer-portfolio/
+portfolio-project/
 ├── frontend/
 ├── backend/
+├── docs/
 ├── docker-compose.yml
-└── README.md
+├── README.md
 ...
 ```
 
@@ -75,7 +76,7 @@ developer-portfolio/
 
 Dieser Bereich bietet einen Überblick über das Portfolio und präsentiert die verfügbaren Abschnitte, darunter persönliche Informationen, Fähigkeiten, Projekte, Berufserfahrung, Ausbildung und Kontaktmöglichkeiten.
 
-![Home Page](docs/screenshots/home.png)
+![Home Page](docs/screenshots/Home.png)
 
 ---
 
@@ -83,7 +84,7 @@ Dieser Bereich bietet einen Überblick über das Portfolio und präsentiert die 
 
 Dieser Bereich enthält Informationen über den beruflichen Hintergrund, persönliche Interessen, den Entwicklungsansatz sowie die fachlichen Spezialisierungen.
 
-![About Section](docs/screenshots/about.png)
+![About Section](docs/screenshots/About.png)
 
 ---
 
@@ -91,15 +92,7 @@ Dieser Bereich enthält Informationen über den beruflichen Hintergrund, persön
 
 Dieser Bereich präsentiert vier Softwareprojekte. Jedes Projekt enthält einen Titel, eine Beschreibung, die verwendeten Technologien, Projektscreenshots sowie einen Link zum entsprechenden GitHub-Repository.
 
-![Projects Section](docs/screenshots/projects.png)
-
----
-
-### Projekt-Galerie
-
-Dieser Bereich zeigt mehrere Screenshots des ausgewählten Projekts. Das Hauptbild zeigt den aktuell ausgewählten Screenshot, während die Vorschaubilder die Navigation zwischen den verfügbaren Bildern ermöglichen.
-
-![Project Gallery](docs/screenshots/project-gallery.png)
+![Projects Section](docs/screenshots/Projects.png)
 
 ---
 
@@ -107,20 +100,7 @@ Dieser Bereich zeigt mehrere Screenshots des ausgewählten Projekts. Das Hauptbi
 
 Der Bereich „Skills“ gibt einen Überblick über die wichtigsten Technologien und Entwicklungswerkzeuge, die bei den Projekten verwendet wurden.
 
-Examples include:
-
-- Angular
-- TypeScript
-- Java
-- Spring Boot
-- PostgreSQL
-- Git
-- GitHub
-- Docker
-- HTML
-- CSS / SCSS
-
-![Skills Section](docs/screenshots/skills.png)
+![Skills Section](docs/screenshots/Skills.png)
 
 ---
 
@@ -128,7 +108,7 @@ Examples include:
 
 Dieser Bereich präsentiert relevante Berufserfahrungen, Praktika, Kurse, Ausbildungsabschnitte, Zertifizierungen und weitere technische Qualifikationen.
 
-![Experience and Education](docs/screenshots/experience.png)
+![Experience and Education](docs/screenshots/Experience.png)
 
 ---
 
@@ -151,6 +131,13 @@ Besucher können über das Frontend Kommentare hinterlassen. Das Spring-Boot-Bac
 ![Comments Section](docs/screenshots/comments.png)
 
 ---
+
+Repository klonen:
+
+```bash
+git clone https://github.com/SajadFaiz/web-entwicklung.git
+cd web-entwicklung
+```
 
 ### Autor
 Ahmad Sajad Faiz
