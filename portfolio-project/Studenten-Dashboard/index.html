@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studenten-Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2 class="logo">MeinDashboard</h2>
+
+      <nav class="nav">
+        <a href="#" class="nav-link active">Übersicht</a>
+        <a href="#" class="nav-link">Aufgaben</a>
+        <a href="#" class="nav-link">Kurse</a>
+        <a href="#" class="nav-link">Berichte</a>
+        <a href="#" class="nav-link">Einstellungen</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="welcome-text">Willkommen zurück</p>
+          <h1>Studenten-Dashboard</h1>
+        </div>
+
+        <button id="themeToggle" class="theme-btn">Thema wechseln</button>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Gesamte Kurse</h3>
+          <p>6</p>
+        </div>
+
+        <div class="card">
+          <h3>Erledigte Aufgaben</h3>
+          <p id="completedTasks">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Bevorstehende Prüfungen</h3>
+          <p>3</p>
+        </div>
+
+        <div class="card">
+          <h3>Aufgabenfortschritt</h3>
+          <p id="taskProgress">0%</p>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="panel">
+          <h2>Kursfortschritt</h2>
+
+          <div class="progress-item">
+            <div class="progress-label">
+              <span>HTML</span>
+              <span>80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-label">
+              <span>CSS</span>
+              <span>70%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-label">
+              <span>JavaScript</span>
+              <span>55%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 55%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Heutige Aufgaben</h2>
+
+          <form id="taskForm" class="task-form">
+            <input type="text" id="taskInput" placeholder="Neue Aufgabe hinzufügen" />
+            <button type="submit">Hinzufügen</button>
+          </form>
+
+          <ul id="taskList" class="task-list"></ul>
+        </div>
+
+        <div class="panel wide-panel">
+          <h2>Wöchentliche Lernstunden</h2>
+
+          <div class="chart">
+            <div class="bar-group">
+              <div class="bar" style="height: 50%;"></div>
+              <span>Mo</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 70%;"></div>
+              <span>Di</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 40%;"></div>
+              <span>Mi</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 85%;"></div>
+              <span>Do</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 60%;"></div>
+              <span>Fr</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 30%;"></div>
+              <span>Sa</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 45%;"></div>
+              <span>So</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Angular / Node
+node_modules/
+.angular/
+dist/
+
+# Java / Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

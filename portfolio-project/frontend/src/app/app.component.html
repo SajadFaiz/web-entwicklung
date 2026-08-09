@@ -1,0 +1,413 @@
+<header class="header">
+  <nav class="navigation container" aria-label="Main navigation">
+    <a class="logo" href="#home">ASF</a>
+
+    <div class="navigation__links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a
+      class="button button--small"
+      href="/resume.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      Resume
+    </a>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero section">
+    <div class="container hero__content">
+      <div>
+        <p class="eyebrow">Hello, my name is</p>
+
+        <h1>Ahmad Sajad Faiz</h1>
+
+        <h2>Full-Stack Developer</h2>
+
+        <p class="hero__introduction">
+          I build reliable full-stack web applications and enjoy transforming
+          business requirements into clean and useful software.
+        </p>
+
+        <div class="hero__actions">
+          <a class="button" href="#projects">View my projects</a>
+
+          <a class="button button--secondary" href="#contact">
+            Contact me
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <span>Frontend</span>
+        <strong>React · Angular · JavaScript · TypeScript</strong>
+
+        <span>Backend</span>
+        <strong>Node.js · Java · Spring Boot</strong>
+
+        <span>Desktop / Cross-Platform</span>
+        <strong>.NET MAUI</strong>
+
+        <span>Database</span>
+        <strong>MongoD · BPostgreSQL</strong>
+
+        <span>Others</span>
+        <strong>C# · .NET MAUI · Python · IoT</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section section--muted">
+    <div class="container narrow">
+      <p class="eyebrow">About me</p>
+      <h2>Developer focused on useful software</h2>
+
+      <p>
+        I am a full-stack software developer with a background in computer
+        science and experience building business-oriented applications.
+        I enjoy working across the frontend and backend, from designing
+        APIs and databases to creating accessible and intuitive user interfaces.
+      </p>
+
+      <p>
+      I am particularly interested in backend architecture, database design,
+      automated testing and building reliable software that solves real-world
+      problems. I also enjoy exploring different areas of software development,
+      including IoT and hardware-based projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="eyebrow">Selected work</p>
+      <h2>Projects</h2>
+
+      <div class="projects">
+        @for (project of projects; track project.id) {
+          <article class="project-card">
+            <app-project-gallery
+              [images]="project.images"
+              [projectTitle]="project.title"
+            />
+
+            <div class="project-card__content">
+              <h3>{{ project.title }}</h3>
+              <p class="project-card__summary">{{ project.summary }}</p>
+              <p>{{ project.description }}</p>
+
+              <div class="tags">
+                @for (
+                  technology of project.technologies;
+                  track technology
+                ) {
+                  <span>{{ technology }}</span>
+                }
+              </div>
+
+              <div class="project-card__links">
+                
+                <a
+                  class="button button--secondary button--small"
+                  [href]="project.githubUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section--muted">
+    <div class="container">
+      <p class="eyebrow">Technical knowledge</p>
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <article class="info-card">
+          <h3>Programming Languages</h3>
+          <p>Java, JavaScript, TypeScript, C#, C++, C, Python</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Frontend</h3>
+          <p>React, Angular, HTML5, CSS3, SCSS</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Backend</h3>
+          <p>Node.js, Express, Java, Spring Boot, REST APIs</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Database</h3>
+          <p>PostgreSQL, MongoDB, relational modelling</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Desktop & Cross-Platform</h3>
+          <p>C#, .NET MAUI</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Tools & Testing</h3>
+          <p>Git, GitHub, Docker, Maven, CI/CD, JUnit</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Working methods</h3>
+          <p>Clean code, Scrum, code reviews and documentation</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="eyebrow">Background</p>
+      <h2>Experience and education</h2>
+
+      <div class="timeline">
+
+        <article class="timeline__item">
+          <span>01.2026 – 27.04.2026</span>
+          <h3>Software Development Courses</h3>
+          <p class="timeline__organization">freeCodeCamp</p>
+          <p>
+            Completed two Software Development courses covering programming fundamentals and software development concepts.
+          </p>
+        </article>
+
+        <article class="timeline__item">
+          <span>10.2025 – 01.2026</span>
+          <h3>Software Developer</h3>
+          <p class="timeline__organization">Visam GmbH</p>
+          <p>
+            Developed a .NET MAUI mobile application for processing messages, evaluated communication architectures and protocols, implemented a message broker for asynchronous data flow simulation, and performed Android device testing.
+          </p>
+        </article>
+
+        <article class="timeline__item">
+          <span>06.2025 – 08.2025</span>
+          <h3>Software Developer</h3>
+          <p class="timeline__organization">Visam GmbH</p>
+          <p>
+            Contributed to the development and integration of a software interface within a project-based architecture, gaining practical experience in software development and collaborative teamwork.
+          </p>
+        </article>
+
+        <article class="timeline__item">
+          <span>11.2021 – 01.2026</span>
+          <h3>B. Eng.</h3>
+          <p class="timeline__organization">Hochschule Koblenz</p>
+          <p>
+            Studied Information Technology and earned a Bachelor of Engineering degree at Koblenz University of Applied Sciences.
+          </p>
+        </article>
+
+      </div>
+
+      <a
+        class="button"
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener"
+      >
+        View or download resume
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="section section--muted">
+    <div class="container">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Contact</h2>
+
+      <div class="contact-layout">
+        <div>
+          <h3>Contact information</h3>
+
+          <p>
+            Email:
+            <a href="mailto:paghmani.ahmadsajad@gmail.com">
+              paghmani.ahmadsajad@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="https://www.linkedin.com/in/ahmad-sajad-faiz-312011406/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Linkedin
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="https://github.com/SajadFaiz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </p>
+        </div>
+
+        <form
+          class="form-card"
+          [formGroup]="contactForm"
+          (ngSubmit)="submitContactForm()"
+        >
+          <h3>Send a message</h3>
+
+          <label for="contact-name">Name</label>
+          <input
+            id="contact-name"
+            type="text"
+            formControlName="name"
+          >
+          @if (controlInvalid('contact', 'name')) {
+            <small>Please enter your name.</small>
+          }
+
+          <label for="contact-email">Email</label>
+          <input
+            id="contact-email"
+            type="email"
+            formControlName="email"
+          >
+          @if (controlInvalid('contact', 'email')) {
+            <small>Please enter a valid email address.</small>
+          }
+
+          <label for="contact-subject">Subject</label>
+          <input
+            id="contact-subject"
+            type="text"
+            formControlName="subject"
+          >
+          @if (controlInvalid('contact', 'subject')) {
+            <small>Please enter a subject.</small>
+          }
+
+          <label for="contact-message">Message</label>
+          <textarea
+            id="contact-message"
+            rows="6"
+            formControlName="message"
+          ></textarea>
+          @if (controlInvalid('contact', 'message')) {
+            <small>The message must contain at least 10 characters.</small>
+          }
+
+          <button
+            class="button"
+            type="submit"
+            [disabled]="contactSubmitting()"
+          >
+            {{ contactSubmitting() ? 'Sending...' : 'Send message' }}
+          </button>
+
+          @if (contactStatus()) {
+            <p class="form-status" aria-live="polite">
+              {{ contactStatus() }}
+            </p>
+          }
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="comments" class="section">
+    <div class="container">
+      <p class="eyebrow">Visitor feedback</p>
+      <h2>Leave a comment</h2>
+
+      <div class="comments-layout">
+        <form
+          class="form-card"
+          [formGroup]="commentForm"
+          (ngSubmit)="submitComment()"
+        >
+          <label for="comment-name">Name</label>
+          <input
+            id="comment-name"
+            type="text"
+            formControlName="authorName"
+          >
+          @if (controlInvalid('comment', 'authorName')) {
+            <small>Please enter your name.</small>
+          }
+
+          <label for="comment-content">Comment</label>
+          <textarea
+            id="comment-content"
+            rows="5"
+            formControlName="content"
+          ></textarea>
+          @if (controlInvalid('comment', 'content')) {
+            <small>
+              The comment must contain between 5 and 1,000 characters.
+            </small>
+          }
+
+          <button
+            class="button"
+            type="submit"
+            [disabled]="commentSubmitting()"
+          >
+            {{ commentSubmitting() ? 'Submitting...' : 'Add comment' }}
+          </button>
+
+          @if (commentStatus()) {
+            <p class="form-status" aria-live="polite">
+              {{ commentStatus() }}
+            </p>
+          }
+        </form>
+
+        <div class="comment-list">
+          @if (commentsLoading()) {
+            <p>Loading comments...</p>
+          } @else if (comments().length === 0) {
+            <p>No comments yet. Be the first visitor to leave one.</p>
+          } @else {
+            @for (comment of comments(); track comment.id) {
+              <article class="comment">
+                <div class="comment__header">
+                  <strong>{{ comment.authorName }}</strong>
+                  <time [attr.datetime]="comment.createdAt">
+                    {{ comment.createdAt }}
+                  </time>
+                </div>
+
+                <p>{{ comment.content }}</p>
+              </article>
+            }
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© {{ currentYear }} Ahmad Sajad Faiz. Built with Angular, Spring Boot and PostgreSQL.</p>
+  </div>
+</footer>
