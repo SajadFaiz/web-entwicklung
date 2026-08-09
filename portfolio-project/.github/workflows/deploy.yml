@@ -37,13 +37,18 @@ jobs:
         working-directory: portfolio-project/frontend
         run: npm run build -- --base-href /web-entwicklung/
 
+      - name: Prepare Pages files
+        working-directory: portfolio-project/frontend
+        run: |
+          cp -r dist/developer-portfolio-frontend/browser/. dist/developer-portfolio-frontend/
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: portfolio-project/frontend/dist/developer-portfolio-frontend/browser
+          path: portfolio-project/frontend/dist/developer-portfolio-frontend
 
   deploy:
     environment:
